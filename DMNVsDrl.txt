@@ -1,0 +1,15 @@
+Drools Rule is a non standard/proprietary
+
+This is incorrect, DRL is not proprietary; Drools.org license is Apache Software License hence Open Source. The DRL format is defined as per DRL grammar, code and documentation of the Drools.org project.
+
+Are Drools Rules (.drl files) and DMN (.dmn) addressing the same problem?
+
+There are some overlaps, but their aims are different.
+
+DRL is a technical rule language, also enables CEP (Complex Event Processing), forward-backward chaining rule style of application etc. With DRL also you can describe both stateless or stateful rule base. Being a technical language, it is often used in conjunction with guided rules, DSLs, guided decision table in order to be even more accessible also for business analyst.
+
+DMN is a standard and visual notation for Decision Management, aiming to bridge the gap between technical and business analysis, with a defined execution semantics by the standard specification itself. In comparison to DRL it might complement as a valid additional tool. For instance the decision logic expressed with DMN is stateless; a more complex application could see a stateful application being comprised of DRL rules, DMN evaluations, CEP style etc. It depends on the use-case.
+
+Does DMN intend to replace DRL in the long run?
+
+As described above there might be few overlaps, but their aims are different; the intent is not a "replacement", instead they are complementary tools.
