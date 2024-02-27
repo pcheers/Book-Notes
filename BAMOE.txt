@@ -1,0 +1,32 @@
+IBM Decision Manager Open Edition, formerly available as Red Hat Decision Manager, is now part of the IBM Business Automation portfolio. 
+
+https://www.ibm.com/products/business-automation-manager-open-editions
+
+https://catalog.redhat.com/software/container-stacks/detail/62cf0fc6d8f65b6b58048dbe
+
+ibm-bamoe
+
+https://access.redhat.com/products/red-hat-decision-manager
+
+https://catalog.redhat.com/software/containers/ibm-bamoe/bamoe-businesscentral-rhel8/62d66109056f9710ce6903c3?architecture=amd64&image=65a9910b615b697ee330bdd7
+https://www.ibm.com/docs/en/ibamoe
+https://www.ibm.com/support/pages/node/6596913
+
+IBM Business Automation Manager Open Editions 8.0 system requirements :
+https://www.ibm.com/support/pages/node/6596919
+
+Getting started with IBM Business Automation Manager Open Editions:
+https://www.ibm.com/docs/en/ibamoe/8.0.x?topic=getting-started-business-automation-manager-open-editions
+
+https://www.ibm.com/docs/en/ibamoe/8.0.x
+
+https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=03BF38D4456B466691049D3CEA856A16&osPlatforms=Linux|Windows&duComponentIds=S004|S005|C007|C006|C008&mandatoryCapIds=30|25&optionalCapIds=127|9|71|35|161|26#!
+
+
+
+
+
+
+
+
+
