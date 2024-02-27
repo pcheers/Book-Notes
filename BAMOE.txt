@@ -32,7 +32,7 @@ https://access.redhat.com/documentation/en-us/ibm_business_automation_manager_op
 Installation from Zip File
 https://access.redhat.com/documentation/en-us/ibm_business_automation_manager_open_editions/8.0/html-single/installing_and_configuring_ibm_business_automation_manager_open_editions/index#assembly_installing-on-eap-deployable_install-on-eap
 
-
+IBAMOE-8.0-BC7.zip
 
 
 
