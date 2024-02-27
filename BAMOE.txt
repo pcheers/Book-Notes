@@ -20,7 +20,18 @@ https://www.ibm.com/docs/en/ibamoe/8.0.x?topic=getting-started-business-automati
 
 https://www.ibm.com/docs/en/ibamoe/8.0.x
 
+Detailed System Requirements
 https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=03BF38D4456B466691049D3CEA856A16&osPlatforms=Linux|Windows&duComponentIds=S004|S005|C007|C006|C008&mandatoryCapIds=30|25&optionalCapIds=127|9|71|35|161|26#!
+
+Design
+https://access.redhat.com/documentation/en-us/ibm_business_automation_manager_open_editions/8.0/html-single/designing_your_decision_management_architecture_for_ibm_business_automation_manager_open_editions/index
+
+Installation
+https://access.redhat.com/documentation/en-us/ibm_business_automation_manager_open_editions/8.0/html-single/installing_and_configuring_ibm_business_automation_manager_open_editions/index
+
+Installation from Zip File
+https://access.redhat.com/documentation/en-us/ibm_business_automation_manager_open_editions/8.0/html-single/installing_and_configuring_ibm_business_automation_manager_open_editions/index#assembly_installing-on-eap-deployable_install-on-eap
+
 
 
 
