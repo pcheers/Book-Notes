@@ -1,0 +1,24 @@
+mport org.eclipse.aether.RepositorySystem;
+import org.eclipse.aether.RepositorySystemSession;
+import org.eclipse.aether.repository.RemoteRepository;
+import org.eclipse.aether.repository.RemoteRepository.Builder;
+import org.eclipse.aether.resolution.ArtifactRequest;
+import org.eclipse.aether.resolution.ArtifactResult;
+import org.eclipse.aether.resolution.VersionRangeRequest;
+import org.eclipse.aether.resolution.VersionRangeResult;
+
+public class JarDownloader {
+    public static void main(String[] args) throws Exception {
+        RepositorySystem repoSystem = new DefaultServiceLocator().getService(RepositorySystem.class);
+        RepositorySystemSession session = MavenRepositorySystemSession.newDefaultSession();
+
+        RemoteRepository repo = new Builder("central", "default", "https://repo.maven.apache.org/maven2/").build();
+
+        ArtifactRequest artifactRequest = new ArtifactRequest();
+        artifactRequest.setArtifact(new DefaultArtifact("group", "artifact", "jar", "1.0"));
+        artifactRequest.setRepositories(Collections.singletonList(repo));
+
+        ArtifactResult artifactResult = repoSystem.resolveArtifact(session, artifactRequest);
+        artifactResult.getArtifact().getFile(); // This gives you the downloaded JAR file
+    }
+}
