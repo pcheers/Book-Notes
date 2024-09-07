@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class QueryBuilder {
+    private List<String> columns;
+    private List<String> tables;
+    private List<String> conditions;
+    private String query;
+
+    public QueryBuilder() {
+        this.columns = new ArrayList<String>();
+        this.tables = new ArrayList<String>();
+        this.conditions = new ArrayList<String>();
+    }
+
+    public QueryBuilder select(String... columns) {
+        for (String column : columns) {
+            this.columns.add(column);
+        }
+        return this;
+    }
+
+    public QueryBuilder from(String... tables) {
+        for (String table : tables) {
+            this.tables.add(table);
+        }
+        return this;
+    }
+
+    public QueryBuilder where(String... conditions) {
+        for (String condition : conditions) {
+            this.conditions.add(condition);
+        }
+        return this;
+    }
+
+    public String build() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT ");
+        for (int i = 0; i < columns.size(); i++) {
+            sb.append(columns.get(i));
+            if (i < columns.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append(" FROM ");
+        for (int i = 0; i < tables.size(); i++) {
+            sb.append(tables.get(i));
+            if (i < tables.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        if (!conditions.isEmpty()) {
+            sb.append(" WHERE ");
+            for (int i = 0; i < conditions.size(); i++) {
+                sb.append(conditions.get(i));
+                if (i < conditions.size() - 1) {
+                    sb.append(" AND ");
+                }
+            }
+        }
+        return sb.toString();
+    }
+}
+
+
+QueryBuilder qb = new QueryBuilder();
+String query = qb.select("first_name", "last_name")
+                .from("employees")
+                .where("age > 25")
+                .and("department = 'IT'")
+                .build();
+
+
+
+SELECT first_name, last_name FROM employees WHERE age > 25 AND department = 'IT';
